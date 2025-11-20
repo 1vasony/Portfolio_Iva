@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: beige;
+}
+
+Header{
+    display: flex;
+    background-color:black;
+    justify-content: space-between;
+    padding: 20px 50px;
+    position: sticky;
+    top: 0;
+    align-items: center;
+}
+Header nav a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: bisque;
+
+}
+Header H1{
+    color:bisque;
+}
+Header nav a:hover{
+    color:brown;
+}
+.Myself{
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: bisque;
+    height: 300px;
+
+}
+.Myself H2{
+    color: beige;
+}
+
+.about{
+    background-color: red;
+    padding: 60px 80px;
+    text-align: center;
+    margin-top: 20px;
+    height: 300px;
+
+}
+.pro{
+    background-color: black;
+    height: 300px;
+}
+.pro h2{
+    text-align: center;
+    color: bisque;
+
+}
+.projectCont{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #111;
+}
+.p1{
+    background-color: aqua;
+    color: black;
+    padding: 20px;
+    width:250px;
+}
+.contact{
+    background-color: gray;
+    padding: 60px 80px;
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+    height: 300px;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+}
