@@ -1,90 +1,156 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    font-family: "Poppins", sans-serif;
 }
-body{
-    background-color: beige;
+section {
+    padding: 60px 8vw;
+    margin-top: 30px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-Header{
+body {
+    background-color: #f6f3e9;
+    color: #222;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+header {
     display: flex;
-    background-color:black;
     justify-content: space-between;
+    align-items: center;
     padding: 20px 50px;
+    background: linear-gradient(90deg, #111 60%, #d19a66 100%);
+    color: #f5deb3;
     position: sticky;
     top: 0;
-    align-items: center;
+    z-index: 10;
+    box-shadow: 0 2px 8px #d19a6622;
 }
-Header nav a{
+
+header nav a {
     margin-left: 20px;
     text-decoration: none;
-    color: bisque;
+    color: #f5deb3;
+    font-weight: 500;
+    font-size: 1.1em;
+    transition: color 0.2s;
+}
 
+header nav a:hover {
+    color: #d19a66;
+    text-shadow: 0 0 5px #d19a66;
 }
-Header H1{
-    color:bisque;
-}
-Header nav a:hover{
-    color:brown;
-}
-.Myself{
-    background-color: gray;
+
+/* HERO SECTION */
+.hero {
+    min-height: 350px;
+    background: linear-gradient(120deg, #333 60%, #d19a66 100%);
+    color: #ffe4c4;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    color: bisque;
-    height: 300px;
-
-}
-.Myself H2{
-    color: beige;
-}
-
-.about{
-    background-color: red;
-    padding: 60px 80px;
+    justify-content: center;
     text-align: center;
-    margin-top: 20px;
-    height: 300px;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 4px 24px #d19a6622;
+}
 
+.hero .btn {
+    margin-top: 15px;
+    padding: 12px 32px;
+    background: #d19a66;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    box-shadow: 0 2px 8px #d19a6622;
+    transition: background 0.2s, box-shadow 0.2s;
 }
-.pro{
-    background-color: black;
-    height: 300px;
-}
-.pro h2{
-    text-align: center;
-    color: bisque;
 
+.hero .btn:hover {
+    background: #c47f45;
+    box-shadow: 0 4px 16px #d19a6644;
 }
-.projectCont{
+
+
+/* SECTIONS */
+section {
+    padding: 60px 8vw;
+    margin-top: 30px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about, .certificates, .contact {
+    background-color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px #d19a6622;
+    text-align: left;
+    margin-bottom: 30px;
+    padding: 40px 32px;
+}
+
+/* PROJECTS */
+
+.projects {
+    background: linear-gradient(120deg, #111 60%, #d19a66 100%);
+    color: #ffe4c4;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px #d19a6622;
+    margin-bottom: 30px;
+    padding: 40px 32px;
+}
+
+.project-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 32px;
     flex-wrap: wrap;
-    background-color: #111;
+    margin-top: 32px;
 }
-.p1{
-    background-color: aqua;
-    color: black;
-    padding: 20px;
-    width:250px;
+
+.project-card {
+    width: 270px;
+    min-height: 180px;
+    padding: 24px 18px;
+    background: linear-gradient(120deg, #d19a66 60%, #ffe4c4 100%);
+    color: #222;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px #d19a6644;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
-.contact{
-    background-color: gray;
-    padding: 60px 80px;
+
+.project-card h3 {
+    margin-bottom: 10px;
+    color: #c47f45;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    background: linear-gradient(120deg, #c18240 60%, #ffe4c4 100%);
+    box-shadow: 0 4px 24px #d19a6644;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    padding: 24px;
     text-align: center;
+    color: #ffe4c4;
     margin-top: 20px;
-    color: black;
-    height: 300px;
-}
-footer{
-    background-color: black;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-    color: white;
+    font-size: 1.1em;
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 -2px 8px #d19a6622;
 }
